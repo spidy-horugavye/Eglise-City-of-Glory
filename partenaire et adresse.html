@@ -1,0 +1,210 @@
+<html>
+
+<head>
+<title>partenaire et adresse</title>
+<style>
+
+/*style de barre de recherche*/
+form{
+text-align:center;/*centre le formulaire sur la page*/
+margin-top:20px;/*espace au-dessus du fomulaire*/
+}
+/*style de champ de saisie*/
+input[type="text"]{
+padding:8px;/*espace interieur du champ*/
+width:300px;/*larguer du champ*/
+border-radius:4px;/*coins arrondis*/
+border:1px solid #ccc;/*bord gris clair*/
+}
+/*style du boutton*/
+button{
+padding:8px 12px;/*espace interieur a droite- a gauche, haut-bas*/
+border:none;/*suprimer le contour par defaut*/
+background-color:blue;/*couleur de fond bleue*/
+color:white;/*couleur du texte*/
+cursor:pointer;/*curseur en forme de main*/
+}
+a{
+text-decoration: none; /* enlever le soulignement */
+color:black; /*couleur du lien*/
+display: inline-block; /*afficher les liens a coter*/
+padding:10px 15px;/*espace interieur du lien*/
+
+background-color:purple;/*couleur du fond du boutton*/
+color:orange;/*couleur du texte*/
+border-radius:5px;/*bord arrondis*/
+margin-right:10px;/*espace entre les liens*/
+margin-left:60px;
+font-weigh:bold;/*texte en grand*/
+font-family:ariel,sans-serfie;
+}
+a:hover{
+background-color:black;/*changer la couleur de fond au survol*/
+color:green;/*changer la couleur du texte au survol*/
+transition:2.3s;/*animation douce de transition*/
+
+}
+a:active{
+background-color:red;/*montrer que le lien est actif*/
+color:orange;
+}
+p{
+text-align:justify;/*justification des paragraphs*/
+line-height:1.5em; /*espacement des lignes*/
+margin-left:80px;
+margin-right:60px;
+font-family:ariel,sans-serfie;
+}
+h1{
+margin-left:60px;
+font-family:ariel,sans-serfie;
+}
+h2{
+margin-left:60px;
+font-family:ariel,sans-serfie;
+}
+img{
+border-radius:5px;
+margin-right:5px;
+margin-top:50px;
+}
+.adresse{
+margin-left:30px;
+font-family: arial, sans-serif;
+line-height:1.6;
+}
+/*section generale*/
+.contact-social{
+background-color:orange;
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:blue;
+}
+/*style pour les images des icones*/
+.social-icons img{
+width:40px;/*taille des icones*/
+margin:10px;
+transtion:transform 0.3s;/*animation douce au survol*/
+}
+/*animation au survol*/
+.social-icons img:hover{
+transform:scale(1.1);/*zoom leger*/
+}
+/*pour les ecrans petits(responsive)*/
+@media screen and (max-width:600px){
+.social-icons img{
+width:30px;
+margin:5px;
+}
+}
+table{
+border:1px solid #444;
+border-collapse:collapse;
+margin-top:20px;
+}
+th, td{
+border:1px solid #444;
+padding:10px;
+text-align:center;
+}
+th{
+background-color:#444;
+color:white;
+}
+tr:nth-child(even){
+background-color:#f2f2f2;
+}
+tr:hover{
+background-color:#e0e0e0;
+}
+</style>
+</head>
+<body>
+<a href="accueil.html">accueil</a>
+<a href="historiquef.html">historique</a>
+<a href="mission.html">mission</a>
+<a href="vision.html">vision</a>
+<a href="objectifs.html">objectifs</a>
+<a href="nos services.html">nos services</a>
+<a href="partenaire et adresse.html">partenaire et adresse</a>
+<form action="/recherche"methode="get"><!--barre de recherche--!>
+<input type="text"name="query"placeholder="recherche..."/><!--champ de texte pour saisir ce qu'on veux--!>
+<button type="submit">&#128269;</button><!--bouton pour lancer la recherche--!>
+</form>
+<section class="Adresse">
+<h2>L'horaire des activites de l'eglise</h2>
+<table>
+<thead>
+<tr>
+<th>Jour</th>
+<th>Activite</th>
+<th>Heure</th>
+<th>Lieu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lundi</td>
+<td>Reunion de priere</td>
+<td>17h00 - 18h30</td>
+<td>temple</td>
+</tr>
+<tr>
+<td>Mardi</td>
+<td>Etude biblique</td>
+<td>16h00 - 18h00</td>
+<td>Salle 1</td>
+</tr>
+<tr>
+<td>Mercredi</td>
+<td>Jeûne et prière </td>
+<td>08h00 - 12h00</td>
+<td>Temple</td>
+</tr>
+<tr>
+<td>Vendredi</td>
+<td> veillée  </td>
+<td>20h00 - 23h00</td>
+<td>Temple</td>
+</tr>
+<tr>
+<td>Dimanche</td>
+<td>Culte </td>
+<td>09h00 - 12h30</td>
+<td>Temple</td>
+</tr>
+</tbody>
+</table>
+<h1>Adresse</h1>
+<p>City of Grace Church</p>
+<p>8eme Avenue, Quartier: Mirango 1</p>
+<p>Telephone: +257 62 123 456 789</p>
+<p>Telephone: +257 79 987 654 321</p>
+<p>Email: cityofgrace@gmail.com</p>
+<h1>Nos partenaires: </h1>
+<img src="image/compassion.jpg"title="Compassion"width="300px"height="200px">
+<img src="image/christian.jpg"title="Christian aid"width="300px"height="200px">
+<img src="image/unicef.jpg"title="Unicef"width="300px"height="200px">
+<img src="image/obuha.jpg"title="Obuha"width="300px"height="200px">
+<!--debut de la section contact et reseaux sociaux avec image--!>
+<section class="contact-social">
+<h2>Contactez-nous</h2>
+<!--adresse Email et telephone--!>
+<p>Email:<a href="mailto:contact@cityofglory.bi">contact@cityofglory.bi</a></p>
+<p>telephone:+257 61 123 456</p>
+<!--Reseaux sociaux avrc images--!>
+<div class="social-icons">
+<!--Facebook--!>
+<a href="https://facebook.com"target="_blank"><img src="image/facebook.png"title="Facebook"alt="Facebook"/></a>
+<!--youtube--!>
+<a href="https://youtube.com"target="_blank"><img src="image/youtube.jpg"title="Youtube"alt="Youtube"/></a>
+<!--instagram--!>
+<a href="https://instagram.com"target="_blank"><img src="image/instagram.jpg"title="Instagram"alt="Instagram"/></a>
+<!--linkedin--!>
+<a href="https://linkedin.com"target="_blank"><img src="image/linkedin.png"title="Linkedin"alt="Linkedin"/></a>
+<!--whatsapp--!>
+<a href="https://wa.me/25779654321"target="_blank"><img src="image/whatsapp.png"title="Whatsapp"alt="Whatsapp"/></a>
+</div>
+</section>
+</body>

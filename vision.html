@@ -1,0 +1,135 @@
+<html>
+
+<head>
+<title>vision</title>
+<style>
+body{
+background-color:green;
+}
+/*style de barre de recherche*/
+form{
+text-align:center;/*centre le formulaire sur la page*/
+margin-top:20px;/*espace au-dessus du fomulaire*/
+}
+/*style de champ de saisie*/
+input[type="text"]{
+padding:8px;/*espace interieur du champ*/
+width:300px;/*larguer du champ*/
+border-radius:4px;/*coins arrondis*/
+border:1px solid #ccc;/*bord gris clair*/
+}
+/*style du boutton*/
+button{
+padding:8px 12px;/*espace interieur a droite- a gauche, haut-bas*/
+border:none;/*suprimer le contour par defaut*/
+background-color:blue;/*couleur de fond bleue*/
+color:white;/*couleur du texte*/
+cursor:pointer;/*curseur en forme de main*/
+}
+a{
+text-decoration: none; /* enlever le soulignement */
+color:black; /*couleur du lien*/
+display: inline-block; /*afficher les liens a coter*/
+padding:10px 15px;/*espace interieur du lien*/
+
+background-color:purple;/*couleur du fond du boutton*/
+color:orange;/*couleur du texte*/
+border-radius:5px;/*bord arrondis*/
+margin-right:10px;/*espace entre les liens*/
+margin-left:60;
+font-weigh:bold;/*texte en grand*/
+font-family:ariel,sans-serfie;
+}
+a:hover{
+background-color:black;/*changer la couleur de fond au survol*/
+color:green;/*changer la couleur du texte au survol*/
+transition:0.3s;/*animation douce de transition*/
+}
+a:active{
+background-color:red;/*montrer que le lien est actif*/
+color:orange;
+}
+h1{
+margin-left:60px;
+font-family:ariel,sans-serfie;
+}
+p{
+margin-left:60px;
+margin-right:60px;
+font-family:ariel,sans-serfie;
+}
+img{
+margin-left:60px;
+weigh:300px;
+height:400px;
+border-radius:5px;
+}
+/*section generale*/
+.contact-social{
+background-color:orange;
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:blue;
+margin-top:20px;
+}
+/*style pour les images des icones*/
+.social-icons img{
+width:40px;/*taille des icones*/
+height:30px;
+margin:10px;
+transtion:transform 0.3s;/*animation douce au survol*/
+}
+/*animation au survol*/
+.social-icons img:hover{
+transform:scale(1.1);/*zoom leger*/
+}
+/*pour les ecrans petits(responsive)*/
+@media screen and (max-width:600px){
+.social-icons img{
+width:50px;
+margin:10px;
+}
+}
+.grand-text{
+font-size:30px;/*taille de texte en pixle*/
+font-weight:bold;/*texte en grand (facultatif)*/
+}
+</style>
+</head>
+<body>
+<a href="accueil.html">accueil</a>
+<a href="historique.html">historique</a>
+<a href="mission.html">mission</a>
+<a href="vision.html">vision</a>
+<a href="objectifs.html">objectifs</a>
+<a href="nos services.html">nos services</a>
+<a href="partenaire et adresse.html">partenaire et adresse</a>
+<form action="/recherche"methode="get"><!--barre de recherche--!>
+<input type="text"name="query"placeholder="recherche..."/><!--champ de texte pour saisir ce qu'on veux--!>
+<button type="submit">&#128269;</button><!--bouton pour lancer la recherche--!>
+</form>
+<h1>Notre vision</h1>
+<p class="grand-text">"Être une église rayonnante, remplie de la gloire de Dieu, impactant la société par des vies transformées et un message d’espoir et qui prépare les générations à marcher dans la vérité."  </p>
+<img src="image/eglise.JPG">
+<!--debut de la section contact et reseaux sociaux avec image--!>
+<section class="contact-social">
+<h2>Contactez-nous</h2>
+<!--adresse Email et telephone--!>
+<p>Email:<a href="mailto:contact@cityofglory.bi">contact@cityofglory.bi</a></p>
+<p>telephone:+257 61 123 456</p>
+<!--Reseaux sociaux avrc images--!>
+<div class="social-icons">
+<!--Facebook--!>
+<a href="https://facebook.com"target="_blank"><img src="image/facebook.png"title="Facebook"alt="Facebook"/></a>
+<!--youtube--!>
+<a href="https://youtube.com"target="_blank"><img src="image/youtube.jpg"title="Youtube"alt="Youtube"/></a>
+<!--instagram--!>
+<a href="https://instagram.com"target="_blank"><img src="image/instagram.jpg"title="Instagram"alt="Instagram"/></a>
+<!--linkedin--!>
+<a href="https://linkedin.com"target="_blank"><img src="image/linkedin.png"title="Linkedin"alt="Linkedin"/></a>
+<!--whatsapp--!>
+<a href="https://wa.me/25779654321"target="_blank"><img src="image/whatsapp.png"title="Whatsapp"alt="Whatsapp"/></a>
+</div>
+</section>
+</body>

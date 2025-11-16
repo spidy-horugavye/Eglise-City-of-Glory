@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<title>Historique</title>
+<style>
+/*style de barre de recherche*/
+form{
+text-align:center;/*centre le formulaire sur la page*/
+margin-top:20px;/*espace au-dessus du fomulaire*/
+}
+/*style de champ de saisie*/
+input[type="text"]{
+padding:8px;/*espace interieur du champ*/
+width:300px;/*larguer du champ*/
+border-radius:4px;/*coins arrondis*/
+border:1px solid #ccc;/*bord gris clair*/
+}
+/*style du boutton*/
+button{
+padding:8px 12px;/*espace interieur a droite- a gauche, haut-bas*/
+border:none;/*suprimer le contour par defaut*/
+background-color:blue;/*couleur de fond bleue*/
+color:white;/*couleur du texte*/
+cursor:pointer;/*curseur en forme de main*/
+}
+img{
+margin: 60px;
+border-radius:8px;
+}
+a{
+text-decoration: none; /* enlever le soulignement */
+color:black; /*couleur du lien*/
+display: inline-block; /*afficher les liens a coter*/
+padding:10px 15px;/*espace interieur du lien*/
+
+background-color:purple;/*couleur du fond du boutton*/
+color:orange;/*couleur du texte*/
+border-radius:5px;/*bord arrondis*/
+margin-right:10px;/*espace entre les liens*/
+margin-left:60px;
+font-weigh:bold;/*texte en grand*/
+font-family:ariel,sans-serfie;
+}
+a:hover{
+background-color:black;/*changer la couleur de fond au survol*/
+color:green;/*changer la couleur du texte au survol*/
+transition:0.3s;/*animation douce de transition*/
+}
+a:active{
+background-color:red;/*montrer que le lien est actif*/
+color:orange;
+}
+p{
+text-align:justify;/*justification des paragraphs*/
+line-height:1.5em; /*espacement des lignes*/
+margin-left:60px;
+margin-right:60px;
+font-family:ariel,sans-serfie;
+
+}
+h1{
+margin-left:60px;
+margin-top:30px;
+font-family:ariel,sans-serfie;
+}
+/*section generale*/
+.contact-social{
+background-color:orange;
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:blue;
+}
+/*style pour les images des icones*/
+.social-icons img{
+width:40px;/*taille des icones*/
+margin:10px;
+transtion:transform 0.3s;/*animation douce au survol*/
+}
+/*animation au survol*/
+.social-icons img:hover{
+transform:scale(1.1);/*zoom leger*/
+}
+/*pour les ecrans petits(responsive)*/
+@media screen and (max-width:600px){
+.social-icons img{
+width:30px;
+margin:5px;
+}
+}
+audio{
+display:block;
+margin:20px auto;
+}
+/*en italique*/
+.italique{
+font-style:italic;/*met texte en italique*/
+}
+</style>
+</head>
+<body>
+<a href="accueil.html">accueil</a>
+<a href="historique.html">historique</a>
+<a href="mission.html">mission</a>
+<a href="vision.html">vision</a>
+<a href="objectifs.html">objectifs</a>
+<a href="nos services.html">nos services</a>
+<a href="partenaire et adresse.html">partenaire et adresse</a>
+<form action="/recherche"methode="get"><!--barre de recherche--!>
+<input type="text"name="query"placeholder="recherche..."/><!--champ de texte pour saisir ce qu'on veux--!>
+<button type="submit">&#128269;</button><!--bouton pour lancer la recherche--!>
+</form>
+<h1>Historique</h1>
+<p>Fondée en 1990, City of Grace Church est née d’une vision inspirée par Dieu à travers le pasteur KARORI Egide avec une vision claire : Apporter la lumière de l’évangile aux cœurs en quête de vérité. </p><!--pour mettre en italique--!>
+<p class="italique">Tout a commencé avec un petit groupe des fidèles réunis dans un lieu modeste, animé par le désir de servir Dieu. Au fil des années, l’église a grandi en nombre et en impact, en multipliant les cultes, les campagnes d’évangélisation, les séminaires de formation et les actions communautaires.</p>
+<p>Depuis sa création, l’église a vu des milliers de vies transformées par la prière, l’enseignement biblique et les actions sociales.</p>
+<img src="image/eglise.jpg"width="1100px"height="400px">
+<audio controls><source src="audio/know.mp3"type="audio/mp3">votre navigateur ne supporte pas l'audio</audio>
+<!--debut de la section contact et reseaux sociaux avec image--!>
+<section class="contact-social">
+<h2>Contactez-nous</h2>
+<!--adresse Email et telephone--!>
+<p>Email:<a href="mailto:contact@cityofglory.bi">contact@cityofglory.bi</a></p>
+<p>telephone:+257 61 123 456</p>
+<!--Reseaux sociaux avrc images--!>
+<div class="social-icons">
+<!--Facebook--!>
+<a href="https://facebook.com"target="_blank"><img src="image/facebook.png"title="Facebook"alt="Facebook"/></a>
+<!--youtube--!>
+<a href="https://youtube.com"target="_blank"><img src="image/youtube.jpg"title="Youtube"alt="Youtube"/></a>
+<!--instagram--!>
+<a href="https://instagram.com"target="_blank"><img src="image/instagram.jpg"title="Instagram"alt="Instagram"/></a>
+<!--linkedin--!>
+<a href="https://linkedin.com"target="_blank"><img src="image/linkedin.png"title="Linkedin"alt="Linkedin"/></a>
+<!--whatsapp--!>
+<a href="https://wa.me/25779654321"target="_blank"><img src="image/whatsapp.png"title="Whatsapp"alt="Whatsapp"/></a>
+</div>
+</section>
+</body>
